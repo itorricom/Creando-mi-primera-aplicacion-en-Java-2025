@@ -19,5 +19,29 @@ public class Main {
                 """ + fechaDeLanzamiento;
 
         System.out.println(sinopsis);
+
+        // Mas formatos de texto
+
+        String nombre1 = "Maria";
+        int edad = 30;
+        double valor = 55.9999;
+        System.out.println(String.format("Mi nombre es %s, tengo %d años y hoy gasté %.2f dolares", nombre1, edad, valor));
+
+        String nombre = "Juan";
+        int aulas = 4;
+
+        String mensaje= """
+                  Hola, %s!
+                  Bienvenido al curso de Java.
+                  Tendremos %d aulas para mostrarte lo que es necesario para que puedas dar tu primeros pasos en este lenguaje                  """.formatted(nombre, aulas);
+
+        System.out.println(mensaje);
+
+        //Casting
+        int a = 10;
+        double b = a; // casting implícito
+
+        double x = 10.5;
+        int y = (int) x; // casting explícito
     }
 }
